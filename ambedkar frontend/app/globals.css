@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F3EEDE;
+  color: #171310;
+}
+
+::selection {
+  background: #102A4C;
+  color: #F3EEDE;
+}
+
+.paper-grain {
+  position: relative;
+}
+.paper-grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('/textures/grain.svg');
+  opacity: 0.5;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+}
+
+.rule {
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(23,19,16,0.25), transparent);
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid #102A4C;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* thin custom scrollbar for horizontal archive/timeline rails */
+.rail::-webkit-scrollbar {
+  height: 6px;
+}
+.rail::-webkit-scrollbar-thumb {
+  background: rgba(23,19,16,0.2);
+  border-radius: 3px;
+}

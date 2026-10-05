@@ -1,0 +1,152 @@
+import { ArchiveDocument } from "@/types";
+
+// DEMO DATA — placeholder records for prototype purposes only.
+// Titles reference Dr. Ambedkar's well-documented published works, but the
+// descriptions, page counts and thumbnails below are illustrative sample
+// metadata, not verified archival records. No text is reproduced from the
+// original works. Replace via services/archive.ts once the real archive
+// backend is connected.
+
+export const mockDocuments: ArchiveDocument[] = [
+  {
+    id: "doc-annihilation-of-caste",
+    title: "Annihilation of Caste",
+    category: "Writings",
+    year: 1936,
+    author: "Dr. B. R. Ambedkar",
+    collection: "Collected Works, Vol. 1",
+    volume: "Vol. 1",
+    chapter: "Undelivered Address",
+    page: 42,
+    language: "English",
+    topic: "Caste & Social Reform",
+    description:
+      "A landmark undelivered address examining the social structure of caste. Sample record for prototype display — full text not included in this demo.",
+    thumbnail: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=800&auto=format&fit=crop",
+    pageCount: 92,
+    isMock: true,
+  },
+  {
+    id: "doc-who-were-the-shudras",
+    title: "Who Were the Shudras?",
+    category: "Books",
+    year: 1946,
+    author: "Dr. B. R. Ambedkar",
+    collection: "Collected Works, Vol. 7",
+    volume: "Vol. 7",
+    page: 12,
+    language: "English",
+    topic: "Historical Enquiry",
+    description:
+      "A historical enquiry into the origin of the Shudra class. Sample catalogue entry for demonstration purposes.",
+    thumbnail: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=800&auto=format&fit=crop",
+    pageCount: 210,
+    isMock: true,
+  },
+  {
+    id: "doc-buddha-and-his-dhamma",
+    title: "The Buddha and His Dhamma",
+    category: "Books",
+    year: 1957,
+    author: "Dr. B. R. Ambedkar",
+    collection: "Collected Works, Vol. 11",
+    volume: "Vol. 11",
+    page: 3,
+    language: "English",
+    topic: "Buddhism & Philosophy",
+    description:
+      "A study of Buddhist thought, published posthumously. Sample catalogue entry — placeholder scan shown for prototype only.",
+    thumbnail: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=800&auto=format&fit=crop",
+    pageCount: 340,
+    isMock: true,
+  },
+  {
+    id: "doc-waiting-for-a-visa",
+    title: "Waiting for a Visa",
+    category: "Manuscripts",
+    year: 1935,
+    author: "Dr. B. R. Ambedkar",
+    collection: "Autobiographical Notes",
+    page: 1,
+    language: "English",
+    topic: "Personal Experience",
+    description:
+      "A short autobiographical manuscript recounting lived experiences of discrimination. Placeholder record for prototype demonstration.",
+    thumbnail: "https://images.unsplash.com/photo-1519791883288-dc8bd696e667?q=80&w=800&auto=format&fit=crop",
+    pageCount: 18,
+    isMock: true,
+  },
+  {
+    id: "doc-mahad-satyagraha-address",
+    title: "Mahad Satyagraha — Address",
+    category: "Speeches",
+    year: 1927,
+    author: "Dr. B. R. Ambedkar",
+    collection: "Speeches Archive",
+    page: 1,
+    language: "Marathi",
+    topic: "Civil Rights",
+    description:
+      "Address associated with the Mahad Satyagraha for the right to draw water from the Chavadar Tank. Sample record only.",
+    thumbnail: "https://images.unsplash.com/photo-1524578271613-d550eed6392c?q=80&w=800&auto=format&fit=crop",
+    pageCount: 6,
+    isMock: true,
+  },
+  {
+    id: "doc-constituent-assembly-speech",
+    title: "Constituent Assembly — Closing Speech",
+    category: "Constitutional Material",
+    year: 1949,
+    author: "Dr. B. R. Ambedkar",
+    collection: "Constituent Assembly Debates",
+    volume: "Vol. XI",
+    page: 1,
+    language: "English",
+    topic: "Constitution of India",
+    description:
+      "Remarks delivered on the adoption of the Constitution of India as Chairman of the Drafting Committee. Sample catalogue record.",
+    thumbnail: "https://images.unsplash.com/photo-1589578228447-e1a4e481c6c8?q=80&w=800&auto=format&fit=crop",
+    pageCount: 24,
+    isMock: true,
+  },
+  {
+    id: "doc-letter-to-gandhi",
+    title: "Correspondence on the Poona Pact",
+    category: "Letters",
+    year: 1932,
+    author: "Dr. B. R. Ambedkar",
+    collection: "Correspondence Archive",
+    page: 1,
+    language: "English",
+    topic: "Poona Pact",
+    description:
+      "Sample correspondence record related to the negotiations preceding the Poona Pact. Demo metadata only.",
+    thumbnail: "https://images.unsplash.com/photo-1495640388908-05fa85288e61?q=80&w=800&auto=format&fit=crop",
+    pageCount: 4,
+    isMock: true,
+  },
+  {
+    id: "doc-photo-constituent-assembly",
+    title: "Photograph — Constituent Assembly Session",
+    category: "Photographs",
+    year: 1949,
+    author: "Archive Collection",
+    collection: "Photographic Archive",
+    language: "English",
+    topic: "Constitution of India",
+    description: "Sample archival photograph placeholder representing the Constituent Assembly sessions.",
+    thumbnail: "https://images.unsplash.com/photo-1436450412740-6b988f486c6b?q=80&w=800&auto=format&fit=crop",
+    isMock: true,
+  },
+];
+
+export const archiveCategories = [
+  "Writings",
+  "Speeches",
+  "Books",
+  "Letters",
+  "Manuscripts",
+  "Photographs",
+  "Historical Documents",
+  "Constitutional Material",
+] as const;

@@ -1,0 +1,73 @@
+import { MediaItem } from "@/types";
+
+// DEMO MEDIA RECORDS — placeholder metadata for the prototype UI.
+// No real audio/video files are bundled; thumbnails are stock imagery.
+
+export const mockMedia: MediaItem[] = [
+  {
+    id: "media-ca-closing",
+    title: "Constituent Assembly — Closing Remarks (Re-enactment)",
+    category: "Speeches",
+    date: "1949",
+    duration: "12:40",
+    description: "Sample placeholder record representing archival audio of the Constituent Assembly proceedings.",
+    thumbnail: "https://images.unsplash.com/photo-1589578228447-e1a4e481c6c8?q=80&w=800&auto=format&fit=crop",
+    kind: "audio",
+    isMock: true,
+  },
+  {
+    id: "media-documentary-life",
+    title: "Life and Legacy — Documentary Excerpt",
+    category: "Documentaries",
+    date: "2016",
+    duration: "45:12",
+    description: "Placeholder documentary entry covering Ambedkar's early life and education, for demo purposes.",
+    thumbnail: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?q=80&w=800&auto=format&fit=crop",
+    kind: "video",
+    isMock: true,
+  },
+  {
+    id: "media-lecture-caste",
+    title: "Lecture Series — Caste and Society",
+    category: "Lectures",
+    date: "2019",
+    duration: "38:05",
+    description: "Sample recorded academic lecture discussing themes from Ambedkar's writings on caste.",
+    thumbnail: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=800&auto=format&fit=crop",
+    kind: "video",
+    isMock: true,
+  },
+  {
+    id: "media-interview-scholar",
+    title: "Interview — Reflections on the Drafting Committee",
+    category: "Interviews",
+    date: "2021",
+    duration: "22:18",
+    description: "Placeholder interview record with a constitutional historian, for demonstration only.",
+    thumbnail: "https://images.unsplash.com/photo-1590650046871-92c887180603?q=80&w=800&auto=format&fit=crop",
+    kind: "audio",
+    isMock: true,
+  },
+  {
+    id: "media-historical-mahad",
+    title: "Historical Recording — Mahad Satyagraha Commemoration",
+    category: "Historical Recordings",
+    date: "1977",
+    duration: "08:52",
+    description: "Sample archival recording metadata from a commemorative gathering at Mahad.",
+    thumbnail: "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=800&auto=format&fit=crop",
+    kind: "audio",
+    isMock: true,
+  },
+  {
+    id: "media-documentary-buddhism",
+    title: "Conversion at Nagpur — Documentary Segment",
+    category: "Documentaries",
+    date: "2018",
+    duration: "29:47",
+    description: "Placeholder segment covering the 1956 conversion ceremony, for prototype display.",
+    thumbnail: "https://images.unsplash.com/photo-1509023464722-18d996393ca8?q=80&w=800&auto=format&fit=crop",
+    kind: "video",
+    isMock: true,
+  },
+];
